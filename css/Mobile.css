@@ -1,0 +1,185 @@
+@media all and (max-width : 959px) {
+    /* pc, tab 보이지 않도록 */
+    /* mobile은 새로 시작해야함. */
+    #wrap{
+        display: none;
+    }
+
+    #mWrap{
+        /* width : 960px; */
+        overflow: hidden;
+    }
+
+    /* m_header Start */
+    #mHeader{
+        /* width : 960px; */
+        /* height: 80px; */
+        background-color: burlywood;
+        position : relative;
+    }
+    #m_logo{
+        /* width : 80px; */
+        /* height: 80px; */
+        /* background-color: black; */
+        float : left;
+    }
+    #m_header_right{
+        /* width : 160px; */
+        /* height: 80px; */
+        float : right;
+        /* background-color: cornflowerblue; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #m_header_right li{
+        /* width : 60px; */
+        /* height: 60px; */
+        /* background-color: crimson; */
+        float : left;
+    }
+
+    #m_main_swiper{
+        /* width : 960px; */
+        /* height: 700px; */
+        /* background-color: bisque; */
+    }
+    .m_swiper_wrapper{
+        /* height: 700px; */
+    }
+    .m_swiper_slide{
+        /* width : 960px; */
+        /* height : 700px; */
+    }
+
+    #mSec{
+        /* width : 960px; */
+        overflow: hidden;
+        /* background-color: brown; */
+    }
+    #mArti1{
+        /* width : 960px; */
+        /* height: 1000px; */
+        /* background-color: cadetblue; */
+        position : relative;
+    }
+    .m_swiper1, .m_swiper2{
+        /* height: 500px; */
+        /* background-color: red; */
+        border-bottom : 1px solid burlywood;
+        margin-bottom : 5px;
+    }
+
+    .mNewPoName{
+        /* width : 960px; */
+        /* height: 50px; */
+        /* background-color: cornflowerblue; */
+        text-align: left;
+        /* line-height: 50px; */
+    }
+    .m_new_pop_text{
+        font-size : 14px;
+    }
+
+    #mArti2{
+        /* width : 960px; */
+        /* height: 1500px; */
+        /* background-color: cornflowerblue; */
+        margin-top : 10px;
+    }
+    .m_swiper3, .m_swiper4, .m_swiper5{
+        /* height: 500px; */
+    }
+    .mNameWrap{
+        /* width : 960px; */
+        /* height: 50px; */
+        /* background-color: crimson; */
+    }
+    .mNameHash{
+        /* width : 400px; */
+        /* height: 50px; */
+        float : left;
+        /* background-color: chocolate; */
+    }
+    .mName{
+        /* width : 100px; */
+        /* height: 50px; */
+        /* line-height: 50px; */
+        float : left;
+        /* background-color: red; */
+        /* font-size : 18px; */
+        font-weight: 900;
+    }
+    .mHash{
+        /* line-height: 50px; */
+        padding : 10px;
+        text-decoration: underline;
+        text-underline-position: under;
+        /* font-size: 16px; */
+    }
+    .m_arti2_text{
+        font-size : 14px;
+    }
+    .mArrow{
+        /* width : 50px; */
+        /* height: 50px; */
+        /* background-color: red; */
+        float : right;
+    }
+    /* mName 100*50 세로중앙정렬 가로왼쪽정렬 */
+    /* mHash 세로중앙정렬 언더라인 패딩 10 */
+
+    /* mFooter */
+    /* 높이 지정 추후에 변경하기 */
+    #mFooter{
+        /* width : 960px; */
+        /* height: 200px; */
+        background-color: #8e8e8e;
+        /* margin-top : 10px; */
+    }
+    #mSnsWrap{
+        /* width : 960px; */
+        /* height: 50px; */
+        /* border-bottom : 1px solid white; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .mSNS{
+        /* width : 50px; */
+        /* height: 50px; */
+        /* background-color: darksalmon; */
+    }
+    #mFooterBot{
+        /* width : 960px; */
+        /* height: 100px; */
+        /* background-color: darkslateblue; */
+    }
+    #mFooterMenuWrap{
+        /* width : 960px; */
+        /* height: 80px; */
+        /* background-color: deepskyblue; */
+        /* margin-top : 20px; */
+    }
+    .mFooterMenu{
+        /* width : 480px; */
+        /* height: 80px; */
+        float : left;
+    }
+    .mFooterLi{
+        /* width : 480px; */
+        /* height: 40px; */
+        text-align: center;
+        /* line-height: 40px; */
+        font-size : 12px;
+
+    }
+    #mFooterCopyright{
+        /* width : 960px; */
+        /* height: 40px; */  
+        margin-top : 10px; 
+        font-size: 14px;
+    }
+}
+/* media Query */

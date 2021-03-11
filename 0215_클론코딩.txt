@@ -1,0 +1,172 @@
+02.15(월)
+
+클론코딩 
+-> 현재 있는 사이트를 똑같이 만드는 코딩 형식
+
+* family site는 select사용
+
+ - PC Ver
+ -> PC width : 1920px
+ 1. 전체 페이지 좌우 여백 50px
+ 2. header 
+     - width : 300px / height : full
+     - position : fixed
+     - 메뉴
+         -> width : 300 * 250px(개당 50px)
+     - 해쉬태그 / 돋보기
+       -> width : 300 * 200px
+
+ 3. section 
+   전체 width : 1620px
+   1) 첫번째 sec
+    - 좌측 박스 width : 900px / 가운데 margin : 30px / 우측 박스 width : 640
+    - height : 700px
+    - 우측 박스 세부 크기
+       -> 이미지 사이 margin : 30px
+       -> 이미지 부모 크기 570 * 368 px
+       -> 이미지 : 285 * 184px
+       -> 텍스트 : 285 * 184px
+       -> 최신순 / 인기순 박스 크기 : 600 * 55px
+
+   2) 두번째 sec
+     Car / Tip / Brand
+     전체 : 1620 * 450px
+     이미지 : 280 * 200px
+     텍스트 : 280 * 50px
+      280*225
+
+
+ 4. footer
+     전체 : 1920 * 300 px
+     1) 좌측 
+        -> 750 * 200 px
+     2) 우측 
+        -> 650 * 100 px
+
+02/17
+
+ - placeholder 키워드 사용시 검색창에 계속 문구가 나타나고 사용자가 문구 입력 시 변경됨
+
+ 1. 부모에게 적용되는 값
+   I ) display : flex
+  II ) flex-direction : 가로로 정렬 / 세로로 정렬 할 지 결정
+      -> 속성값 : row(default값), row-reverse, column, column-reverse
+
+ III ) flex-wrap : 자동으로 좁아질 경우 위치 조정
+      -> 속성값 : nowrap(default값), wrap 
+      -> nowrap 사용하면 화면이 좁아져도 위치가 바뀌지 않고 자식들의 크기 값이 줄어듦.
+      -> warp 사용하면 화면이 좁아지면 자식들의 크기가 변화하지 않아 아래로 내려감.
+
+ IV ) flex-flow (direction wrap) : flex-direction과 flex-wrap를 모두 사용할 수 있도록 한 키워드
+	ex like) border : 픽셀 선종류 색깔
+
+  V ) justify-content -> 시작 위치가 어딘지 결정
+      -> 속성값 : flex-start(default값, 좌 -> 우), flex-end(우->좌), center(가운데)
+      -> 속성값 : space-around(각 객체의 margin값 지정), space-between(제일 처음과 마지막 객체는 가장자리에 고정되어 있고,
+                                                                                나머지 사이에 값이 주어짐)
+      -> 속성값 : space-evenly(각 객체에 모두 동일한 margin값 지정됨)
+
+  VI ) align-items
+       -> 속성값 : center(수직에서 가운데로 정렬됨)
+       -> 속성값 : baseline(가장 큰 영역이 기준이 되어 그에 맞게 정렬이 됨
+
+ VII ) align-content
+
+02/17 flex 코딩 Sample
+
+->HTML
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+  <div id = "con">
+    <div class = "in in_1">1</div>
+    <div class = "in in_2">2</div>
+    <div class = "in in_3">3</div>
+    <div class = "in in_4">4</div>
+    <div class = "in in_5">5</div>
+    <div class = "in in_6">6</div>
+    <div class = "in in_7">7</div>
+    <div class = "in in_8">8</div>
+    <div class = "in in_9">9</div>
+    <div class = "in in_10">10</div>
+  </div>
+</body>
+</html>
+
+ - > CSS
+*{
+  margin : 0;
+  padding : 0;
+}
+
+#con{
+  height : 100vh;
+  background : pink;
+  display : flex;
+  flex-direction : row;
+  flex-wrap : wrap;
+  /* flex-flow : row nowrap; */
+  justify-content : space-evenly;
+  align-items : baseline;
+}
+
+.in{
+  width : 50px;
+  height : 50px;
+  text-align : center;
+  line-height : 50px;
+}
+.in_1{
+  padding : 20px;
+  background : red;
+}
+.in_2{
+  background : white;
+}
+.in_3{
+  background : blue;
+}
+.in_4{
+  background : lightblue;
+}
+.in_5{
+  background : lightgreen;
+}
+.in_6{
+  background : lightgray;
+}
+.in_7{
+  background : purple;
+}
+.in_8{
+  background : coral;
+}
+.in_9{
+  background : green;
+}
+.in_10{
+ background : lightgreen; 
+}
+
+
+
+
+
+2. 자식에게 적용되는 값
+   I ) order
+   II ) flex-grow
+   III ) flex-shrink
+   IV ) flex
+   V  ) align-self
+
+사용 시 고려사항
+   1. 기준 잡기
+      -> 가로로 축으로 할지 세로로 축을 할지 결정하기.
+
+
+   

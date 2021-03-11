@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/swiper.css" rel="stylesheet" type="text/css">
+    <link href="css/Reset.css" rel="stylesheet" type="text/css">
+    <link href="css/PC.css" rel="stylesheet" type="text/css">
+    <link href="css/tab.css" rel="stylesheet" type="text/css">
+    <link href="css/Mobile.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <title>Clone Page</title>
+</head>
+
+<body>
+    <!-- PC / Tab 영역 -->
+    <div id="wrap">
+        <header>
+            <div id="headLogo">
+                <img src="img/ikea_logo.jpg" alt="logo">
+            </div>
+
+            <ul id="mainMenu">
+                <li class="menuLi"><a href="#">더블 침대</a></li>
+                <li class="menuLi"><a href="#">싱글 침대</a></li>
+                <li class="menuLi"><a href="#">수납형/로프트/2층 침대</a></li>
+                <li class="menuLi"><a href="#">유아용/어린이/간이 침대</a></li>
+                <li class="menuLi"><a href="#">소파베드/쿠션형침대</a></li>
+            </ul>
+            <!-- mianMenu End -->
+
+            <div id="findHashMenu">
+
+                <article id="findWrap">
+                    <input type="text" placeholder="검색어를 입력하세요" title="검색어 입력">
+                    <div id="zoom">
+                        <a href="#">
+                            <img src="img/icon/search_icon.png" alt="search_icon">
+                        </a>
+                    </div>
+                </article>
+
+                <div class="hashBox">
+                    <span class="hashInBox"><a href="#">#더블</a></span>
+                    <span class="hashInBox"><a href="#">#싱글</a></span>
+                    <span class="hashInBox"><a href="#">#수납형</a></span>
+                    <span class="hashInBox"><a href="#">#로프트</a></span>
+                </div>
+
+                <div class="hashBox">
+                    <span class="hashInBox"><a href="#">#2층</a></span>
+                    <span class="hashInBox"><a href="#">#유아용</a></span>
+                    <span class="hashInBox"><a href="#">#어린이</a></span>
+                </div>
+
+                <div class="hashBox">
+                    <span class="hashInBox"><a href="#">#간이침대</a></span>
+                    <span class="hashInBox"><a href="#">#소파베드</a></span>
+                </div>
+                <div class="hashBox">
+                    <span class="hashInBox"><a href="#">#쿠션형침대</a></span>
+                </div>
+
+            </div>
+            <!-- findHashMenu End -->
+
+        </header>
+        <!-- header End -->
+
+        <section>
+
+            <article id="arti1">
+
+                <!-- Swiper -->
+                <div class="swiper-container" id="swiper_box">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper_img">
+                            <div class = "main_more"><a href = "#">자세히 보기</a></div>
+                            <img src="img/main_img_1.jpg" alt="main_img">                            
+                        </div>
+                        <div class="swiper-slide swiper_img">
+                            <div class = "main_more"><a href = "#">자세히 보기</a></div>
+                            <img src="img/main_img_2.jpg" alt="main_img">
+                        </div>
+                        <div class="swiper-slide swiper_img">
+                            <div id = "main_text1">하루를 최상의 컨디션으로 시작하려면 숙면을 취해야 하죠. <br/>
+                                다양한 스타일의 튼튼한 IKEA 침대는 <br/>최고의 편안함과 품질을 약속해드려요</div>
+                            <img src="img/main_img_3.jpg" alt="main_img">
+                        </div>
+                        <div class="swiper-slide swiper_img">
+                            <div id = "main_text2">전통적인 스타일부터 모던한 디자인까지 IKEA에서는 저렴한 
+                                가격에<br/> 싱글 및 수퍼싱글+ 침대 프레임을 구매하실 수 있어요.</div>
+                            <img src="img/main_img_4.jpg" alt="main_img">
+                        </div>
+                        <div class="swiper-slide swiper_img">
+                            <div id = "main_text3">
+                                시트와 이불부터 옷과 신발까지 침실에는 수납할 물건이 참 많아요.<br/> IKEA의
+                                오토만침대와 수납침대로 편안한 숙면과 <br/>편리한 추가 수납공간이라는 두 마리 토끼를 모두 잡으세요. 
+                            </div>
+                            <img src="img/main_img_5.jpg" alt="main_img">
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+
+                <!-- Swiper JS -->
+                <script src="../package/swiper-bundle.min.js"></script>
+
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper('#swiper_box', {
+                        pagination: {
+                            el: '.swiper-pagination',
+                            type: 'fraction',
+                        },
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        }
+                    });
+                </script>
+                <!-- Swipe End -->
+
+                <div id="arti1_RightBox">
+
+                    <div id="recentPopTitle">
+                        <div id="recent" class="tab on">최신순</div>
+                        <div id="pop" class="tab">인기순</div>
+                    </div>
+
+                    <div id="recentPopImgWrap">
+
+                        <div class="recentPopInBox">
+                            <div class="recentPop">
+                                <div class="lately_pop_img">
+                                    <img src="img/lately/recent_1.jpg" alt="lately_img" class="lately">
+                                    <img src="img/lately/recent_1_dif.jpg" alt="lately_img" class="lately_dif">
+                                </div>
+                                <div class="lately_pop_text">
+                                    <h4>IDANÄS 이다네스</h4>
+                                    <span class="lately_pop_span">쿠션형 침대프레임, 120x200cm<br />\349,000</span>
+                                </div>
+                            </div>
+                            <div class="recentPop">
+                                <div class="lately_pop_img">
+                                    <img src="img/lately/recent_2.jpg" alt="lately_img" class="lately">
+                                    <img src="img/lately/recent_2_dif.jpg" alt="lately_img" class="lately_dif">
+                                </div>
+                                <div class="lately_pop_text">
+                                    <h4>IDANÄS 이다네스</h4>
+                                    <span class="lately_pop_span">침대프레임, 120x200cm<br />\314,000</span>
+                                </div>
+                            </div>
+                            <div class="recentPop">
+                                <div class="lately_pop_img">
+                                    <img src="img/lately/recent_3.jpg" alt="lately_img" class="lately">
+                                    <img src="img/lately/recent_3_dif.jpg" alt="lately_img" class="lately_dif">
+                                </div>
+                                <div class="lately_pop_text">
+                                    <h4>IDANÄS 이다네스</h4>
+                                    <span class="lately_pop_span">침대프레임, 150x200cm<br />\439,000</span>
+                                </div>
+                            </div>
+                            <div class="recentPop">
+                                <div class="lately_pop_img">
+                                    <img src="img/lately/recent_4.jpg" alt="lately_img" class="lately">
+                                    <img src="img/lately/recent_4_dif.jpg" alt="lately_img" class="lately_dif">
+                                </div>
+                                <div class="lately_pop_text">
+                                    <h4>HAUGA 하우가</h4>
+                                    <span class="lately_pop_span">침대+수납상자2, 150x200cm<br />\339,000</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="recentPopInBox">
+                            <div class="recentPop">
+                                <div class="lately_pop_img">
+                                    <img src="img/pop/pop_1.jpg" alt="pop_img" class="pop">
+                                    <img src="img/pop/pop_1_dif.jpg" alt="pop_img" class="pop_dif">
+                                </div>
+                                <div class="lately_pop_text">
+                                    <h4>VITVAL 비트발</h4>
+                                    <span class="lately_pop_span">2층침대프레임, 90x200cm<br />\269,000</span>
+                                </div>
+
+                            </div>
+                            <div class="recentPop">
+                                <div class="lately_pop_img">
+                                    <img src="img/pop/pop_2.jpg" alt="pop_img" class="pop">
+                                    <img src="img/pop/pop_2_dif.jpg" alt="pop_img" class="pop_dif">
+                                </div>
+                                <div class="lately_pop_text">
+                                    <h4>HEMNES 헴네스</h4>
+                                    <span class="lately_pop_span">데이베드프레임+서랍3, 80x200cm<br />\349,000</span>
+                                </div>
+                            </div>
+                            <div class="recentPop">
+                                <div class="lately_pop_img">
+                                    <img src="img/pop/pop_3.jpg" alt="pop_img" class="pop">
+                                    <img src="img/pop/pop_3_dif.jpg" alt="pop_img" class="pop_dif">
+                                </div>
+                                <div class="lately_pop_text">
+                                    <h4>HEMNES 헴네스</h4>
+                                    <span class="lately_pop_span">데이베드+서랍3/매트리스2, 80x200cm<br />\567,000</span>
+                                </div>
+                            </div>
+                            <div class="recentPop">
+                                <div class="lately_pop_img">
+                                    <img src="img/pop/pop_4.jpg" alt="pop_img" class="pop">
+                                    <img src="img/pop/pop_4_dif.jpg" alt="pop_img" class="pop_dif">
+                                </div>
+                                <div class="lately_pop_text">
+                                    <h4>FYRESDAL 퓌레스달</h4>
+                                    <span class="lately_pop_span">데이베드+매트리스2, 80x200cm<br />\359,000</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- recnetPopImgWrap End -->
+
+                </div>
+
+            </article>
+            <!-- arti1 End -->
+
+            <article id="arti2">
+
+                <div class="arti2_Box">
+
+                    <div class="arti2_TitleBox">
+                        <div class="arti2_Title">
+
+                            <div class="title">더블 침대</div>
+
+                            <div class="secHash">
+                                <span class="secInHash">#싱글침대</span>
+                                <span class="secInHash">#수납형침대</span>
+                                <span class="secInHash"></span>
+                            </div>
+
+                        </div>
+                        <!-- arti2_Title End -->
+
+                        <div class="arti2_more">More &gt;</div>
+
+                    </div>
+                    <!-- arti2_TitleBox End -->
+
+                    <div class="arti2_ImgText">
+                        <div class="btn" id="carLeft">
+                            <img src="img/icon/prev_icon_color.png" alt="prev_icon">
+                        </div>
+                        <div class="btn" id="carRight">
+                            <img src="img/icon/next_icon_color.png" alt="next_icon">
+                        </div>
+
+                        <div class="arti2_BigBox">
+                            <!-- arti2 -> 이미지 & Text 10개 -->
+                            <div class="arti2_InBox">
+                                <div class="arti2_Img">
+                                    <img src="img/double/double_img_1.jpg" alt="double_img" class="double_img">
+                                    <img src="img/double/double_img_1_dif.jpg" alt="double_img_dif"
+                                        class="double_img_dif">
+                                </div>
+                                <!-- 280*200 -->
+                                <div class="arti2_Text">
+                                    <h5>GRIMSBU 그림스부</h5>
+                                    <span class="arti2_span">침대프레임, 150x200cm, \60,000</span>
+                                </div>
+                                <!-- 280*50 -->
+                            </div>
+
+                            <div class="arti2_InBox">
+                                <div class="arti2_Img">
+                                    <img src="img/double/double_img_2.jpg" alt="double_img" class="double_img">
+                                    <img src="img/double/double_img_2_dif.jpg" alt="double_img_dif"
+                                        class="double_img_dif">
+                                </div>
+                                <div class="arti2_Text">
+                                    <h5>SLATTUM 슬라툼</h5>
+                                    <span class="arti2_span">쿠션형 침대프레임, 150x200cm, \199,000</span>
+                                </div>
+                            </div>
+
+                            <div class="arti2_InBox">
+                                <div class="arti2_Img">
+                                    <img src="img/double/double_img_3.jpg" alt="double_img" class="double_img">
+                                    <img src="img/double/double_img_3_dif.jpg" alt="double_img_dif"
+                                        class="double_img_dif">
+                                </div>
+                                <div class="arti2_Text">
+                                    <h5>HEMNES 헴네스</h5>
+                                    <span class="arti2_span">침대프레임, 150x200cm, \389,000</span>
+                                </div>
+                            </div>
+
+                            <div class="arti2_InBox">
+                                <div class="arti2_Img">
+                                    <img src="img/double/double_img_4.jpg" alt="double_img" class="double_img">
+                                    <img src="img/double/double_img_4_dif.jpg" alt="double_img_dif"
+                                        class="double_img_dif">
+                                </div>
+                                <div class="arti2_Text">
+                                    <h5>SAGSTUA 삭스투아</h5>
+                                    <span class="arti2_span">침대프레임, 150x200cm, \329,000</span>
+                                </div>
+                            </div>
+
+                            <div class="arti2_InBox">
+                                <div class="arti2_Img">
+                                    <img src="img/double/double_img_5.jpg" alt="double_img" class="double_img">
+                                    <img src="img/double/double_img_5_dif.jpg" alt="double_img_dif"
+                                        class="double_img_dif">
+                                </div>
+                                <div class="arti2_Text">
+                                    <h5>GRIMSBU 그림스부</h5>
+                                    <span class="arti2_span">침대프레임, 90x200cm, \40,000</span>
+                                </div>
+                            </div>
+
+                            <div class="arti2_InBox">
+                                <div class="arti2_Img">
+                                    <img src="img/double/double_img_6.jpg" alt="double_img" class="double_img">
+                                    <img src="img/double/double_img_6_dif.jpg" alt="double_img_dif"
+                                        class="double_img_dif">
+                                </div>
+                                <div class="arti2_Text">
+                                    <h5>MALM 말름</h5>
+                                    <span class="arti2_span">높은침대프레임, 90x200cm, \179,000</span>
+                                </div>
+                            </div>
+
+                            <div class="arti2_InBox">
+                                <div class="arti2_Img">
+                                    <img src="img/double/double_img_7.jpg" alt="double_img" class="double_img">
+                                    <img src="img/double/double_img_7_dif.jpg" alt="double_img_dif"
+                                        class="double_img_dif">
+                                </div>
+                                <div class="arti2_Text">
+                                    <h5>HEMNES 헴네스</h5>
+                                    <span class="arti2_span">침대프레임, 120x200cm, \244,000</span>
+                                </div>
+                            </div>
+
+                            <div class="arti2_InBox">
+                                <div class="arti2_Img">
+                                    <img src="img/double/double_img_8.jpg" alt="double_img" class="double_img">
+                                    <img src="img/double/double_img_8_dif.jpg" alt="double_img_dif"
+                                        class="double_img_dif">
+                                </div>
+                                <div class="arti2_Text">
+                                    <h5>NORDLI 노르들리</h5>
+                                    <span class="arti2_span">수납침대프레임, 90x200cm, \299,000</span>
+                                </div>
+                            </div>
+
+                            <div class="arti2_InBox">
+                                <div class="arti2_Img">
+                                    <img src="img/double/double_img_9.jpg" alt="double_img" class="double_img">
+                                    <img src="img/double/double_img_9_dif.jpg" alt="double_img_dif"
+                                        class="double_img_dif">
+                                </div>
+                                <div class="arti2_Text">
+                                    <h5>PLATSA 플랏사</h5>
+                                    <span class="arti2_span">침대프레임+서랍10, 140x244x103cm, \759,000</span>
+                                </div>
+                            </div>
+
+                            <div class="arti2_InBox">
+                                <div class="arti2_Img">
+                                    <img src="img/double/double_img_10.jpg" alt="double_img" class="double_img">
+                                    <img src="img/double/double_img_10_dif.jpg" alt="double_img_dif"
+                                        class="double_img_dif">
+                                </div>
+                                <div class="arti2_Text">
+                                    <h5>NORDLI 노르들리</h5>
+                                    <span class="arti2_span">침대프레임+수납/헤드, 160x200cm, \649,000</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- arti2_ImgText End -->
+
+                </div>
+
+                <div class="arti2_Box">
+
+                    <div class="arti2_TitleBox">
+
+                        <div class="arti2_Title">
+
+                            <div class="title">유아용 침대</div>
+
+                            <div class="secHash">
+                                <span class="secInHash">#어린이침대</span>
+                                <span class="secInHash">#간이침대</span>
+                                <span class="secInHash"></span>
+                                <span class="secInHash"></span>
+                            </div>
+
+                        </div>
+
+                        <div class="arti2_more">More &gt;</div>
+
+                    </div>
+
+                    <div class="arti2_ImgText">
+                        <div class="btn" id="tipLeft">
+                            <img src="img/icon/prev_icon_color.png" alt="prev_icon">
+                        </div>
+                        <div class="btn" id="tipRight">
+                            <img src="img/icon/next_icon_color.png" alt="next_icon">
+                        </div>
+
+                        <div class="arti2_BigBox">
+                            <!-- arti2 -> 이미지 & Text 10개 -->
+                            <div class="arti2_InBox">
+                                <div class="arti2_Img">
+                                    <img src="img/child/child_img_1.jpg" alt="child_img" class="child_img">
+                                    <img src="img/child/child_img_1_dif.jpg" alt="child_img_dif" class="child_img_dif">
+                                </div>
+                                <div class="arti2_Text">
+                                    <h5>GULLIVER 굴리베르</h5>
+                                    <span class="arti2_span">유아용침대, 60x120cm, \129,000</span>
+                                </div>
+                            </div>
+
+                            <div class="arti2_InBox">
+                                <div class="arti2_Img">
+                                    <img src="img/child/child_img_2.jpg" alt="child_img" class="child_img">
+                                    <img src="img/child/child_img_2_dif.jpg" alt="child_img_dif" class="child_img_dif">
+                                </div>
+                                <div class="arti2_Text">
+                                    <h5>SUNDVIK 순드비크</h5>
+                                    <span class="arti2_span">유아용침대 60x120cm, \169,000</span>
+                                </div>
+                            </div>
+
+                            <div class="arti2_InBox">
+                                <div class="arti2_Img">
+                                    <img src="img/child/child_img_3.jpg" alt="child_img" class="child_img">
+                                    <img src="img/child/child_img_3_dif.jpg" alt="child_img_dif" class="child_img_dif">
+                                </div>
+                                <div class="arti2_Text">
+                                    <h5>MYLLRA 뮐라</h5>
+                                    <span class="arti2_span">유아용침대+서랍장, 60x120cm, \299,000</span>
+                                </div>
+                            </div>
+
+                            <div class="arti2_InBox">
+                                <div class="arti2_Img">
+                                    <img src="img/child/child_img_4.jpg" alt="child_img" class="child_img">
+                                    <img src="img/child/child_img_4_dif.jpg" alt="child_img_dif" class="child_img_dif">
+                                </div>
+                                <div class="arti2_Text">
+                                    <h5>STUVA 스투바 / FÖLJA 푈리아</h5>
+                                    <span class="arti2_span">유아용침대+서랍, 60x120cm, \291,000</span>
+                                </div>
+                            </div>
+
+                            <div class="arti2_InBox">
+                                <div class="arti2_Img">
+                                    <img src="img/child/child_img_5.jpg" alt="child_img" class="child_img">
+                                    <img src="img/child/child_img_5_dif.jpg" alt="child_img_dif" class="child_img_dif">
+                                </div>
+                                <div class="arti2_Text">
+                                    <h5>MINNEN 민넨</h5>
+                                    <span class="arti2_span">길이조절침대+갈빗살, 80x200cm, \129,000</span>
+                                </div>
+                            </div>
+
+                            <div class="arti2_InBox">
+                                <div class="arti2_Img">
+                                    <img src="img/child/child_img_6.jpg" alt="child_img" class="child_img">
+                                    <img src="img/child/child_img_6_dif.jpg" alt="child_img_dif" class="child_img_dif">
+                                </div>
+                                <div class="arti2_Text">
+                                    <h5>SLÄKT 슬렉트</h5>
+                                    <span class="arti2_span">침대프레임+보조침대/수납, 90x200cm, \259,000</span>
+                                </div>
+                            </div>
+
+                            <div class="arti2_InBox">
+                                <div class="arti2_Img">
+                                    <img src="img/child/child_img_7.jpg" alt="child_img" class="child_img">
+                                    <img src="img/child/child_img_7_dif.jpg" alt="child_img_dif" class="child_img_dif">
+                                </div>
+                                <div class="arti2_Text">
+                                    <h5>BUSUNGE 부숭에</h5>
+                                    <span class="arti2_span">길이조절침대, 80x200cm, \199,000</span>
+                                </div>
+                            </div>
+
+                            <div class="arti2_InBox">
+                                <div class="arti2_Img">
+                                    <img src="img/child/child_img_8.jpg" alt="child_img" class="child_img">
+                                    <img src="img/child/child_img_8_dif.jpg" alt="child_img_dif" class="child_img_dif">
+                                </div>
+                                <div class="arti2_Text">
+                                    <h5>HEMNES 헴네스</h5>
+                                    <span class="arti2_span">데이베드프레임+서랍3, 80x200cm, \349,000</span>
+                                </div>
+                            </div>
+
+                            <div class="arti2_InBox">
+                                <div class="arti2_Img">
+                                    <img src="img/child/child_img_9.jpg" alt="child_img" class="child_img">
+                                    <img src="img/child/child_img_9_dif.jpg" alt="child_img_dif" class="child_img_dif">
+                                </div>
+                                <div class="arti2_Text">
+                                    <h5>FYRESDAL 퓌레스달</h5>
+                                    <span class="arti2_span">데이비드+매트리스2, 80x200cm, \359,000</span>
+                                </div>
+                            </div>
+
+                            <div class="arti2_InBox">
+                                <div class="arti2_Img">
+                                    <img src="img/child/child_img_10.jpg" alt="child_img" class="child_img">
+                                    <img src="img/child/child_img_10_dif.jpg" alt="child_img_dif" class="child_img_dif">
+                                </div>
+                                <div class="arti2_Text">
+                                    <h5>FLEKKE 플레케</h5>
+                                    <span class="arti2_span">데이베드+서랍2/매트리스2, 80x200cm, \567,000</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- arti2_ImgText End -->
+
+                </div>
+
+                <div class="arti2_Box">
+
+                    <div class="arti2_TitleBox">
+                        <div class="arti2_Title">
+
+                            <div class="title">로프트 침대</div>
+
+                            <div class="secHash">
+                                <span class="secInHash">#2층침대</span>
+                                <span class="secInHash">#소파베드</span>
+                                <span class="secInHash"></span>
+                                <span class="secInHash"></span>
+                            </div>
+
+                        </div>
+                        <div class="arti2_more">More &gt;</div>
+                    </div>
+
+                    <div class="arti2_ImgText">
+                        <div class="btn" id="brandLeft">
+                            <img src="img/icon/prev_icon_color.png" alt="prev_icon">
+                        </div>
+                        <div class="btn" id="brandRight">
+                            <img src="img/icon/next_icon_color.png" alt="next_icon">
+                        </div>
+
+                        <div class="arti2_BigBox">
+                            <!-- arti2 -> 이미지 & Text 10개 -->
+                            <div class="arti2_InBox">
+                                <div class="arti2_Img">
+                                    <img src="img/loft/loft_img_1.jpg" alt="loft_img" class = "loft_img">
+                                    <img src = "img/loft/loft_img_1_dif.jpg" alt = "loft_img_dif" class = "loft_img_dif">
+                                </div>
+                                <div class="arti2_Text">
+                                    <h5>VITVAL 비트발</h5>
+                                    <span class="arti2_span">로프트침대프레임, 90x200cm, \199,000</span>
+                                </div>
+                            </div>
+
+                            <div class="arti2_InBox">
+                                <div class="arti2_Img">
+                                    <img src="img/loft/loft_img_2.jpg" alt="loft_img" class = "loft_img">
+                                    <img src = "img/loft/loft_img_2_dif.jpg" alt = "loft_img_dif" class = "loft_img_dif">
+                                </div>
+                                <div class="arti2_Text">
+                                    <h5>SVÄRTA 스베르타</h5>
+                                    <span class="arti2_span">로프트침대프레임, 90x200cm, \169,000</span>
+                                </div>
+                            </div>
+
+                            <div class="arti2_InBox">
+                                <div class="arti2_Img">
+                                    <img src="img/loft/loft_img_3.jpg" alt="loft_img" class = "loft_img">
+                                    <img src = "img/loft/loft_img_3_dif.jpg" alt = "loft_img_dif" class = "loft_img_dif">
+                                </div>
+                                <div class="arti2_Text">
+                                    <h5>VITVAL 비트발</h5>
+                                    <span class="arti2_span">2층침대프레임, 90x200cm, \269,000</span>
+                                </div>
+                            </div>
+
+                            <div class="arti2_InBox">
+                                <div class="arti2_Img">
+                                    <img src="img/loft/loft_img_4.jpg" alt="loft_img" class = "loft_img">
+                                    <img src = "img/loft/loft_img_4_dif.jpg" alt = "loft_img_dif" class = "loft_img_dif">
+                                </div>
+                                <div class="arti2_Text">
+                                    <h5>MYDAL 뮈달</h5>
+                                    <span class="arti2_span">2층침대프레임, 90x200cm, \249,000</span>
+                                </div>
+                            </div>
+
+                            <div class="arti2_InBox">
+                                <div class="arti2_Img">
+                                    <img src="img/loft/loft_img_5.jpg" alt="loft_img" class = "loft_img">
+                                    <img src = "img/loft/loft_img_5_dif.jpg" alt = "loft_img_dif" class = "loft_img_dif">
+                                </div>
+                                <div class="arti2_Text">
+                                    <h5>FRIHETEN 프리헤텐</h5>
+                                    <span class="arti2_span">수납코너소파베드, \499,000</span>
+                                </div>
+                            </div>
+
+                            <div class="arti2_InBox">
+                                <div class="arti2_Img">
+                                    <img src="img/loft/loft_img_6.jpg" alt="loft_img" class = "loft_img">
+                                    <img src = "img/loft/loft_img_6_dif.jpg" alt = "loft_img_dif" class = "loft_img_dif">
+                                </div>
+                                <div class="arti2_Text">
+                                    <h5>NYHAMN 뉘함</h5>
+                                    <span class="arti2_span">3인용 소파베드, \249,000</span>
+                                </div>
+                            </div>
+
+                            <div class="arti2_InBox">
+                                <div class="arti2_Img">
+                                    <img src="img/loft/loft_img_7.jpg" alt="loft_img" class = "loft_img">
+                                    <img src = "img/loft/loft_img_7_dif.jpg" alt = "loft_img_dif" class = "loft_img_dif">
+                                </div>
+                                <div class="arti2_Text">
+                                    <h5>FLOTTEBO 플로테보</h5>
+                                    <span class="arti2_span">소파베드, 120xm, \699,000</span>
+                                </div>
+                            </div>
+
+                            <div class="arti2_InBox">
+                                <div class="arti2_Img">
+                                    <img src="img/loft/loft_img_8.jpg" alt="loft_img" class = "loft_img">
+                                    <img src = "img/loft/loft_img_8_dif.jpg" alt = "loft_img_dif" class = "loft_img_dif">
+                                </div>
+                                <div class="arti2_Text">
+                                    <h5>SMÅSTAD 스모스타드</h5>
+                                    <span class="arti2_span">로프트침대, 90x200cm, \616,500</span>
+                                </div>
+                            </div>
+
+                            <div class="arti2_InBox">
+                                <div class="arti2_Img">
+                                    <img src="img/loft/loft_img_9.jpg" alt="loft_img" class = "loft_img">
+                                    <img src = "img/loft/loft_img_9_dif.jpg" alt = "loft_img_dif" class = "loft_img_dif">
+                                </div>
+                                <div class="arti2_Text">
+                                    <h5>STORÅ 스토로</h5>
+                                    <span class="arti2_span">로프트침대프레임, 140x200cm, \379,000</span>
+                                </div>
+                            </div>
+
+                            <div class="arti2_InBox">
+                                <div class="arti2_Img">
+                                    <img src="img/loft/loft_img_10.jpg" alt="loft_img" class = "loft_img">
+                                    <img src = "img/loft/loft_img_10_dif.jpg" alt = "loft_img_dif" class = "loft_img_dif">
+                                </div>
+                                <div class="arti2_Text">
+                                    <h5>VITVAL 비트발</h5>
+                                    <span class="arti2_span">2층침대프레임+보조침대, 90x200cm, \369,000</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- arti2_ImgText End -->
+
+                </div>
+
+            </article>
+            <!-- arti2 End -->
+
+        </section>
+        <!-- section End -->
+
+        <footer>
+
+            <div id="leftFooter">
+
+                <div id="footerLogo">
+                    <img src="img/ikea_logo_footer.jpg" alt="logo_footer">
+                </div>
+
+                <div id="footerMenu">
+                    <ul id="footerTopMenu">
+                        <li class="footerLi"><a href="#">개인정보 처리방침</a></li>
+                        <li class="footerLi"><a href="#">윤리경영 사이버감사실</a></li>
+                        <li class="footerLi"><a href="#">운영정책</a></li>
+                        <li class="footerLi"><a href="#">고객센터</a></li>
+                        <li class="footerLi"><a href="#">이메일 문의</a></li>
+                    </ul>
+                    <div id="footerCopyright">COPYRIGHT(C) KIA MOTORS CORP. ALL RIGHTS RESERVED</div>
+                </div>
+
+            </div>
+            <!-- leftFooter End -->
+
+            <div id="rightFooter">
+                <div id="footerSNS">
+                    <div class="sns"><a href="#">
+                            <img src="img/baseline_facebook_black_36dp.png" alt="facebook_logo">
+                        </a></div>
+                    <div class="sns"><a href="#"></a></div>
+                    <div class="sns"><a href="#">
+                            <img src="img/instagram.png" alt="instagram_logo">
+                        </a></div>
+                    <div class="sns"><a href="#"></a></div>
+                    <div class="sns"><a href="#">
+                            <img src="img/youtube.png" alt="youtube_logo">
+                        </a></div>
+                </div>
+                <select>
+                    <option>메뉴1</option>
+                    <option>메뉴2</option>
+                    <option>메뉴3</option>
+                    <option>메뉴4</option>
+                    <option>메뉴5</option>
+                    <option>메뉴6</option>
+                    <option>메뉴7</option>
+                    <option>메뉴8</option>
+                    <option>메뉴9</option>
+                    <option>메뉴10</option>
+                </select>
+            </div>
+            <!-- rightFooter End -->
+
+        </footer>
+        <!-- footer End -->
+    </div>
+    <!-- PC / Tab End -->
+
+    <!-- Mobile 영역 -->
+    <div id="mWrap">
+        <header id="mHeader">
+            <!-- 로고 및 돋보기, 햄버거는 나중에 -->
+            <div id="m_logo">
+                <a href="#">
+                    <img src="img/ikea_logo.jpg" alt="logo">
+                </a>
+            </div>
+            <ul id="m_header_right">
+                <li><a href="#"><img src="img/icon/search_icon.png" alt="search_icon"></a></li>
+                <li><a href="#"><img src="img/icon/menu_icon.png" alt="menu_icon"></a></li>
+            </ul>
+        </header>
+        <!-- section1 Swiper -->
+        <div class="swiper-container" id="m_main_swiper">
+            <div class="swiper-wrapper m_swiper_wrapper">
+                <div class="swiper-slide m_swiper_slide">
+                    <img src="img/main_img_1.jpg" alt="mobile_main_img">
+                </div>
+                <div class="swiper-slide m_swiper_slide">
+                    <img src="img/main_img_2.jpg" alt="mobile_main_img">
+                </div>
+                <div class="swiper-slide m_swiper_slide">
+                    <img src="img/main_img_3.jpg" alt="mobile_main_img">
+                </div>
+                <div class="swiper-slide m_swiper_slide">
+                    <img src="img/main_img_4.jpg" alt="mobile_main_img">
+                </div>
+                <div class="swiper-slide m_swiper_slide">
+                    <img src="img/main_img_5.jpg" alt="mobile_main_img">
+                </div>
+            </div>
+            <!-- Add Scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="../package/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('#m_main_swiper', {
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                    hide: true,
+                },
+            });
+        </script>
+        <!-- section1 Swiper End -->
+
+        <section id="mSec">
+            <article id="mArti1">
+                <!-- Swiper -->
+                <div class="swiper-container m_swiper1">
+                    <h1 class="mNewPoName">최신순</h1>
+                    <div class="swiper-wrapper m_wrapper1">
+                        <div class="swiper-slide m_swiper_slide1">
+                            <div class="m_new_pop_img">
+                                <img src="img/lately/recent_1_dif.jpg" alt="new_img">
+                            </div>
+                            <div class="m_new_pop_text">IDANÄS 이다네스 / \349,000</div>
+                        </div>
+                        <div class="swiper-slide m_swiper_slide1">
+                            <div class="m_new_pop_img">
+                                <img src="img/lately/recent_2_dif.jpg" alt="new_img">
+                            </div>
+                            <div class="m_new_pop_text">IDANÄS 이다네스 / \314,000</div>
+                        </div>
+                        <div class="swiper-slide m_swiper_slide1">
+                            <div class="m_new_pop_img">
+                                <img src="img/lately/recent_3_dif.jpg" alt="new_img">
+                            </div>
+                            <div class="m_new_pop_text">IDANÄS 이다네스 / \439,000</div>
+                        </div>
+                        <div class="swiper-slide m_swiper_slide1">
+                            <div class="m_new_pop_img">
+                                <img src="img/lately/recent_4.jpg" alt="new_img">
+                            </div>
+                            <div class="m_new_pop_text">HAUGA 하우가 / \339,000</div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+                <!-- Swiper JS -->
+                <script src="../package/swiper-bundle.min.js"></script>
+
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper('.m_swiper1', {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                        pagination: {
+                            el: '.swiper-pagination',
+                            clickable: true,
+                        },
+                    });
+                </script>
+                <!-- 최신순 End -->
+
+                <div class="swiper-container m_swiper2">
+                    <h1 class="mNewPoName">인기순</h1>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="m_new_pop_img">
+                                <a href="#"><img src="img/pop/pop_1_dif.jpg" alt="pop_img"></a>
+                            </div>
+                            <div class="m_new_pop_text">VITVAL 비트발 / \269,000</div>
+                        </div>
+                        <div class="swiper-slide m_slide2">
+                            <div class="m_new_pop_img">
+                                <a href="#"><img src="img/pop/pop_2_dif.jpg" alt="pop_img"></a>
+                            </div>
+                            <div class="m_new_pop_text">HEMNES 헴네스 / \349,000</div>
+                        </div>
+                        <div class="swiper-slide m_slide2">
+                            <div class="m_new_pop_img">
+                                <a href="#"><img src="img/pop/pop_3_dif.jpg" alt="pop_img"></a>
+                            </div>
+                            <div class="m_new_pop_text">HEMNES 헴네스 / \567,000</div>
+                        </div>
+                        <div class="swiper-slide m_slide2">
+                            <div class="m_new_pop_img">
+                                <a href="#"><img src="img/pop/pop_4.jpg" alt="pop_img"></a>
+                            </div>
+                            <div class="m_new_pop_text">FYRESDAL 퓌레스달 / \359,000</div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+                <!-- 인기순 End -->
+                <!-- Swiper JS -->
+                <script src="../package/swiper-bundle.min.js"></script>
+
+
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper('.m_swiper2', {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                        pagination: {
+                            el: '.swiper-pagination',
+                            clickable: true,
+                        },
+                    });
+                </script>
+
+
+
+
+            </article>
+            <!-- mArti1 End -->
+
+
+            <article id="mArti2">
+                <!-- Swiper -->
+                <!-- mobile Car -->
+                <div class="swiper-container m_swiper3">
+                    <div class="mNameWrap">
+                        <div class="mNameHash">
+                            <div class="mName">더블침대</div>
+                            <span class="mHash">#싱글</span>
+                            <span class="mHash">#수납형</span>
+                            <div class="mArrow">
+                                <a href = "#">
+                                    <img src = "img/icon/m_more_btn.png" alt = "more_btn">
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="m_arti2_img">
+                                <a href="#"><img src="img/double/double_img_1_dif.jpg" alt="double_img"></a>
+                            </div>
+                            <div class="m_arti2_text">GRIMSBU 그림스부 / \60,000</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="m_arti2_img">
+                                <a href="#"><img src="img/double/double_img_2_dif.jpg" alt="double_img"></a>
+                            </div>
+                            <div class="m_arti2_text">SLATTUM 슬라툼 / \199,000</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="m_arti2_img">
+                                <a href="#"><img src="img/double/double_img_3_dif.jpg" alt="double_img"></a>
+                            </div>
+                            <div class="m_arti2_text">HEMNES 헴네스 / \389,000</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="m_arti2_img">
+                                <a href="#"><img src="img/double/double_img_4_dif.jpg" alt="double_img"></a>
+                            </div>
+                            <div class="m_arti2_text">SAGSTUA 삭스투아 / \329,000</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="m_arti2_img">
+                                <a href="#"><img src="img/double/double_img_5_dif.jpg" alt="double_img"></a>
+                            </div>
+                            <div class="m_arti2_text">GRIMSBU 그림스부 / \40,000</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="m_arti2_img">
+                                <a href="#"><img src="img/double/double_img_6_dif.jpg" alt="double_img"></a>
+                            </div>
+                            <div class="m_arti2_text">MALM 말름 / \179,000</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="m_arti2_img">
+                                <a href="#"><img src="img/double/double_img_7_dif.jpg" alt="double_img"></a>
+                            </div>
+                            <div class="m_arti2_text">HEMNES 헴네스 / \244,000</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="m_arti2_img">
+                                <a href="#"><img src="img/double/double_img_8_dif.jpg" alt="double_img"></a>
+                            </div>
+                            <div class="m_arti2_text">NORDLI 노르들리 / \299,000</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="m_arti2_img">
+                                <a href="#"><img src="img/double/double_img_9_dif.jpg" alt="double_img"></a>
+                            </div>
+                            <div class="m_arti2_text">PLATSA 플랏사 / \759,000</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="m_arti2_img">
+                                <a href="#"><img src="img/double/double_img_10_dif.jpg" alt="double_img"></a>
+                            </div>
+                            <div class="m_arti2_text">NORDLI 노르들리 / \649,000</div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <!-- Swiper JS -->
+                <script src="../package/swiper-bundle.min.js"></script>
+
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper('.m_swiper3', {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                        pagination: {
+                            el: '.swiper-pagination',
+                            clickable: true,
+                        },
+                    });
+                </script>
+                <!-- mobile Car End -->
+
+
+                <!-- Swiper -->
+                <!-- mobile Tiop -->
+                <div class="swiper-container m_swiper4">
+                    <div class="mNameWrap">
+                        <div class="mNameHash">
+                            <div class="mName">유아용침대</div>
+                            <span class="mHash">#어린이용</span>
+                            <span class="mHash">#간이</span>
+                            <div class="mArrow">
+                                <a href = "#">
+                                    <img src = "img/icon/m_more_btn.png" alt = "more_btn">
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="m_arti2_img">
+                                <a href="#">
+                                    <img src="img/child/child_img_1.jpg" alt="child_img">
+                                </a>
+                            </div>
+                            <div class="m_arti2_text">GULLIVER 굴리베르 / \129,000</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="m_arti2_img">
+                                <a href="#">
+                                    <img src="img/child/child_img_2.jpg" alt="child_img">
+                                </a>
+                            </div>
+                            <div class="m_arti2_text">SUNDVIK 순드비크 / \169,000</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="m_arti2_img">
+                                <a href="#">
+                                    <img src="img/child/child_img_3.jpg" alt="child_img">
+                                </a>
+                            </div>
+                            <div class="m_arti2_text">MYLLRA 뮐라 / \299,000</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="m_arti2_img">
+                                <a href="#">
+                                    <img src="img/child/child_img_4.jpg" alt="child_img"> </a>
+                            </div>
+                            <div class="m_arti2_text">STUVA 스투바 / FÖLJA 푈리아 / \291,000</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="m_arti2_img">
+                                <a href="#">
+                                    <img src="img/child/child_img_5.jpg" alt="child_img">
+                                </a>
+                            </div>
+                            <div class="m_arti2_text">MINNEN 민넨 / \129,000</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="m_arti2_img">
+                                <a href="#">
+                                    <img src="img/child/child_img_6.jpg" alt="child_img">
+                                </a>
+                            </div>
+                            <div class="m_arti2_text">SLÄKT 슬렉트 / \259,000</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="m_arti2_img">
+                                <a href="#">
+                                    <img src="img/child/child_img_7_dif.jpg" alt="child_img">
+                                </a>
+                            </div>
+                            <div class="m_arti2_text">BUSUNGE 부숭에 / \199,000</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="m_arti2_img">
+                                <a href="#">
+                                    <img src="img/child/child_img_8.jpg" alt="child_img">
+                                </a>
+                            </div>
+                            <div class="m_arti2_text">HEMNES 헴네스 / \349,000</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="m_arti2_img">
+                                <a href="#">
+                                    <img src="img/child/child_img_9.jpg" alt="child_img">
+                                </a>
+                            </div>
+                            <div class="m_arti2_text">FYRESDAL 퓌레스달 / \359,000</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="m_arti2_img">
+                                <a href="#">
+                                    <img src="img/child/child_img_10.jpg" alt="child_img">
+                                </a>
+                            </div>
+                            <div class="m_arti2_text">FLEKKE 플레케 / \567,000</div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <!-- Swiper JS -->
+                <script src="../package/swiper-bundle.min.js"></script>
+
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper('.m_swiper4', {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                        pagination: {
+                            el: '.swiper-pagination',
+                            clickable: true,
+                        },
+                    });
+                </script>
+                <!-- mobile Tip End -->
+
+                <!-- Swiper -->
+                <!-- mobile Brand -->
+                <div class="swiper-container m_swiper5">
+                    <div class="mNameWrap">
+                        <div class="mNameHash">
+                            <div class="mName">로프트침대</div>
+                            <span class="mHash">#2층</span>
+                            <span class="mHash">#소파베드</span>
+                            <div class="mArrow">
+                                <a href = "#">
+                                    <img src = "img/icon/m_more_btn.png" alt = "more_btn">
+                                </a>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="m_arti2_img">
+                                <a href="#">
+                                    <img src="img/loft/loft_img_1_dif.jpg" alt="loft_img">
+                                </a>
+                            </div>
+                            <div class="m_arti2_text">VITVAL 비트발 / \199,000</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="m_arti2_img">
+                                <a href="#">
+                                    <img src="img/loft/loft_img_2_dif.jpg" alt="loft_img">
+                                </a>
+                            </div>
+                            <div class="m_arti2_text">SVÄRTA 스베르타 / \169,000</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="m_arti2_img">
+                                <a href="#">
+                                    <img src="img/loft/loft_img_3.jpg" alt="loft_img">
+                                </a>
+                            </div>
+                            <div class="m_arti2_text">VITVAL 비트발 / \269,000</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="m_arti2_img">
+                                <a href="#">
+                                    <img src="img/loft/loft_img_4.jpg" alt="loft_img">
+                                </a>
+                            </div>
+                            <div class="m_arti2_text">MYDAL 뮈달 / \249,000</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="m_arti2_img">
+                                <a href="#">
+                                    <img src="img/loft/loft_img_5_dif.jpg" alt="loft_img">
+                                </a>
+                            </div>
+                            <div class="m_arti2_text">FRIHETEN 프리헤텐 / \499,000</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="m_arti2_img">
+                                <a href="#">
+                                    <img src="img/loft/loft_img_6_dif.jpg" alt="loft_img">
+                                </a>
+                            </div>
+                            <div class="m_arti2_text">NYHAMN 뉘함 / \249,000</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="m_arti2_img">
+                                <a href="#">
+                                    <img src="img/loft/loft_img_7.jpg" alt="loft_img">
+                                </a>
+                            </div>
+                            <div class="m_arti2_text">LOTTEBO 플로테보 / \699,000</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="m_arti2_img">
+                                <a href="#">
+                                    <img src="img/loft/loft_img_8_dif.jpg" alt="loft_img">
+                                </a>
+                            </div>
+                            <div class="m_arti2_text">SMÅSTAD 스모스타드 / \616,500</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="m_arti2_img">
+                                <a href="#">
+                                    <img src="img/loft/loft_img_9.jpg" alt="loft_img">
+                                </a>
+                            </div>
+                            <div class="m_arti2_text">STORÅ 스토로 / \379,000</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="m_arti2_img">
+                                <a href="#">
+                                    <img src="img/loft/loft_img_10_dif.jpg" alt="loft_img">
+                                </a>
+                            </div>
+                            <div class="m_arti2_text">VITVAL 비트발 / \369,000</div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <!-- Swiper JS -->
+                <script src="../package/swiper-bundle.min.js"></script>
+
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper('.m_swiper5', {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                        pagination: {
+                            el: '.swiper-pagination',
+                            clickable: true,
+                        },
+                    });
+                </script>
+                <!-- mobile Brand End -->
+
+
+            </article>
+            <!-- mArti2 End -->
+
+        </section>
+        <!-- mSec End -->
+
+        <footer id="mFooter">
+            <div id="mSnsWrap">
+                <div class="mSNS"></div>
+                <div class="mSNS">
+                    <a href="#">
+                        <img src="img/baseline_facebook_black_36dp.png" alt="facebook_icon">
+                    </a>
+                </div>
+                <div class="mSNS">
+                    <a href="#">
+                        <img src="img/instagram.png" alt="instagram_icon">
+                    </a>
+                </div>
+                <div class="mSNS">
+                    <a href="#">
+                        <img src="img/youtube.png" alt="youtube_icon">
+                    </a>
+                </div>
+                <div class="mSNS"></div>
+            </div>
+
+            <div id="mFooterBot">
+
+                <div id="mFooterMenuWrap">
+                    <!-- 좌측 메뉴 -->
+                    <ul class="mFooterMenu">
+                        <li class="mFooterLi">
+                            <a href = "#">개인정보 처리방침</a>
+                        </li>
+                        <li class="mFooterLi">
+                            <a href = "#">고객센터</a>
+                        </li>
+                    </ul>
+
+                    <!-- 우측 메뉴 -->
+                    <ul class="mFooterMenu">
+                        <li class="mFooterLi">
+                            <a href = "#">운영정책</a>
+                        </li>
+                        <li class="mFooterLi">
+                            <a href = "#">이메일 문의</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- mFOoterMenuWrap End -->
+
+                <div id="mFooterCopyright">
+                    COPYRIGHT(C) KIA MOTORS CORP. ALL RIGHTS RESERVED
+                </div>
+
+            </div>
+        </footer>
+        <!-- footer End -->
+    </div>
+    <!-- Mobile End -->
+</body>
+
+</html>

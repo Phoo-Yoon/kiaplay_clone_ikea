@@ -1,0 +1,533 @@
+@media all and (min-width : 1440px) {
+    /* px값 주석처리 할것 */
+
+    /* 전체 영역 */
+    #mWrap {
+        display: none;
+    }
+
+    h4{
+        /* font-size : 14px; */
+    }
+
+    /* mWrap 안나오도록 지정 */
+
+    #wrap {
+        /* width: 1920px; */
+        overflow: hidden;
+        /* background-color: aqua; */
+        position: relative;
+    }
+
+    /* warp End */
+
+    /* header */
+    header {
+        /* width: 300px; */
+        height: 100vh;
+        background-color: burlywood;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+
+    #headLogo {
+        /* width: 200px; */
+        /* height: 200px; */
+        /* background-color: blanchedalmond; */
+        /* margin: 50px auto; */
+    }
+
+    /* headLogo End */
+
+    #mainMenu {
+        /* width: 200px; */
+        /* height: 250px; */
+        /* background-color: cornflowerblue; */
+        /* margin: 80px 50px auto; */
+    }
+
+    .menuLi {
+        /* width: 200px; */
+        /* height: 50px; */
+        text-align: left;
+        /* line-height: 50px; */
+        /* border-bottom: 1px solid white; */
+        /* box-sizing: border-box; */
+        /* padding-left: 10px; */
+        /* font-size : 15px; */
+        font-weight: 900;
+    }
+
+    /* menu End */
+
+    /* findHashMenu */
+    #findHashMenu {
+        /* width: 200px; */
+        /* height: 200px; */
+        /* border: 1px solid black; */
+        /* margin: 50px; */
+    }
+
+    #findWrap {
+        /* width: 200px; */
+        /* height: 50px; */
+        /* background-color: yellow; */
+        /* overflow: hidden; */
+    }
+
+    input {
+        /* width: 150px; */
+        /* height: 50px; */
+        outline: none;
+        /* input 검색창 클릭 시 생기는 border 없어짐 */
+        border: 1px solid burlywood;
+        box-sizing: border-box;
+    }
+
+    #zoom {
+        /* width: 50px; */
+        /* height: 50px; */
+        /* background-color: black; */
+        float: right;
+    }
+
+    .hashBox {
+        /* width: 200px; */
+        /* height: 30px; */
+        text-align: left;
+        /* line-height: 30px; */
+        /* margin-top: 8px; */
+    }
+
+    .hashInBox {
+        background-color: lightgray;
+        padding: 2px;
+        display: inline-block;
+        /* font-size : 13px; */
+    }
+    
+/* 왼쪽에서 300px만큼 띄울 수 있는 방법 4가지
+1. position : relative
+2. margin-left
+3. padding-left
+4. float : right
+*/
+
+    /* 본문영역 */
+    section {
+        /* width: 1620px; */
+        /* overflow: hidden; */
+        position: relative;
+        /* left: 300px; */
+        /* background-color: bisque; */
+    }
+
+    #arti1 {
+        /* width: 1620px; */
+        /* height: 700px; */
+        /* background-color: cadetblue; */
+    }
+
+    #swiper_box {
+        /* width: 900px; */
+        /* height: 700px; */
+        /* background-color: cornflowerblue; */
+        float: left;
+        position :relative;
+    }
+
+    .swiper_img{
+        /* width : 900px; */
+        /* height: 700px; */
+    }
+
+    .main_more{
+        /* width : 200px; */
+        /* height: 50px; */
+        background-color: rgba(0,0,0,0.5);
+        text-align: center;
+        /* line-height: 50px; */
+        /* border-radius: 15px; */
+        /* color : white; */
+        font-weight: 900;
+        position : absolute;
+        /* bottom : 50px; */
+        /* right : 50px; */
+        /* font-size : 16px; */
+    }
+    .main_more a{
+        color : white;
+    }
+
+
+    #main_text1{
+        position : absolute;
+        /* font-size : 25px; */
+        color : white;
+        font-weight: 900;
+        text-align: right;
+        /* background-color: black; */
+        /* right : 20px; */
+        /* top : 80px; */
+    }
+    #main_text2{
+        position : absolute;
+        /* font-size : 25px; */
+        font-weight: 900;
+        color : white;
+        text-align: left;
+        /* bottom : 50px; */
+        /* left : 30px; */
+    }
+    #main_text3{
+        position : absolute;
+        /* font-size : 25px; */
+        font-weight: 900;
+        text-align: right;
+        /* right : 50px; */
+        /* top: 150px; */
+    }
+
+
+
+
+    /* swiper Box End */
+
+    #arti1_RightBox {
+        /* width: 690px; */
+        /* height: 700px; */
+        /* background-color: crimson; */
+        float: right;
+    }
+
+    #recentPopTitle {
+        /* width: 500px; */
+        /* height: 50px; */
+        background-color: cornsilk;
+        /* background-color: burlywood; */
+        /* margin: 30px auto; */
+    }
+
+    .tab {
+        /* width: 250px; */
+        /* height: 50px; */
+        float: left;
+        text-align: center;
+        /* line-height: 50px; */
+        font-weight: 900;
+        font-size: 20px;
+        /* border: 1px solid black; */
+        /* box-sizing: border-box; */
+    }
+
+    #recentPopImgWrap {
+        /* width: 500px; */
+        /* height: 550px; */
+        /* background-color: purple; */
+        /* margin: 30px auto; */
+        position: relative;
+    }
+
+    .recentPopInBox {
+        /* width: 500px; */
+        /* height: 550px; */
+        position: absolute;
+        top: 0;
+        left: 0;
+        /* background-color: white; */
+    }
+    /* 인기순 꺼둠. */
+    .recentPopInBox:last-child{
+        display: none;
+    }
+
+    /* hover 효과 -> 추후에 js로 변경 */
+    .lately_dif, .pop_dif {
+        display: none;
+    }
+
+    .lately_dif {
+        display: none;
+    }
+
+    .recentPop:hover .lately {
+        display: none;
+    }
+
+    .recentPop:hover .lately_dif {
+        display: block;
+    }
+    .recentPop:hover .pop{
+        display: none;
+    }
+    .recentPop:hover .pop_dif{
+        display: block;
+    }
+
+
+    .recentPop {
+        /* width: 235px; */
+        /* height: 260px; */
+        /* border: 1px solid black; */
+        float: left;
+    }
+    .lately_pop_img{
+        /* width : 235px; */
+        /* height: 200px; */
+    }
+    .lately_pop_text{
+        /* width : 235px; */
+        /* height: 60px; */
+        /* background-color: lightcoral; */
+    }
+
+    .recentPop:first-child {
+        /* margin-right: 25px; */
+    }
+
+    .recentPop:nth-child(3) {
+        /* margin-right: 25px; */
+        /* margin-top: 25px; */
+    }
+
+    .recentPop:last-child {
+        /* margin-top: 25px; */
+    }
+    .lately_pop_span{
+        font-size : 13px;
+    }
+
+
+    /* arti1 End */
+
+    #arti2 {
+        /* width: 1620px; */
+        /* overflow: hidden; */
+        /* background-color: palevioletred; */
+    }
+
+    .arti2_Box {
+        /* width: 1620px; */
+        /* height: 450px; */
+        /* margin-top: 50px; */
+        /* background-color: powderblue; */
+    }
+
+    .arti2_TitleBox {
+        /* width: 1620px; */
+        /* height: 55px; */
+        /* background-color: midnightblue; */
+        position: relative;
+    }
+
+    .arti2_Title {
+        /* width: 400px; */
+        /* height: 55px; */
+        /* background-color: olive; */
+        float: left;
+    }
+
+    .title {
+        /* width: 150px; */
+        /* height: 55px; */
+        text-align: left;
+        /* line-height: 55px; */
+        float: left;
+        /* background-color: orchid; */
+        font-weight: 900;
+        /* font-size: 25px; */
+    }
+
+    .secHash {
+        /* width: 250px; */
+        /* height: 55px; */
+        text-align: left;
+        /* line-height: 55px; */
+        float: left;
+        /* background-color: palegreen; */
+    }
+
+    .secInHash {
+        text-decoration: underline;
+        padding: 5px;
+        font-size : 15px;
+    }
+
+    .arti2_more {
+        float: right;
+        /* width: 100px; */
+        /* height: 55px; */
+        /* background-color: peru; */
+        text-align: center;
+        /* line-height: 55px; */
+    }
+
+    .arti2_ImgText {
+        /* width: 1620px; */
+        /* height: 265px; */
+        /* background-color: rebeccapurple; */
+        position: relative;
+    }
+
+    .btn img{
+        cursor: pointer;
+    }
+    .double_img_dif, .child_img_dif, .loft_img_dif{
+        display: none;
+    }
+    /* child, loft는 css hover로 일단 설정 -> 추후 변경예정 */
+
+
+    .arti2_BigBox {
+        /* width: 3300px; */
+        /* height: 265px; */
+        /* display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; */
+        position : relative;
+
+    }
+
+    .arti2_InBox {
+        /* width : 330px; */
+        /* height: 250px; */
+        float : left;
+           
+    }
+    .arti2_Img{
+        /* width : 280px; */
+        /* height: 200px; */
+    }
+    .arti2_Text{
+        /* width : 280px; */
+        /* height: 50px; */
+        /* background-color: red; */
+    }
+
+    .btn {
+        /* width: 50px; */
+        /* height: 50px; */
+        /* background-color: skyblue; */
+        position: absolute;
+        z-index: 9;
+        /* top: 107.5px; */
+    }
+
+    #carRight,
+    #tipRight,
+    #brandRight {
+        right: 0;
+    }
+
+    h5{
+        /* font-size : 13px; */
+    }
+    .arti2_span{
+        /* font-size : 13px; */
+    }
+
+    .on{
+        background-color: burlywood;
+    }
+
+    /* footer */
+    footer {
+        /* width: 1920px; */
+        /* height: 130px; */
+        background-color: #8e8e8e;
+        position: relative;
+        z-index:999;
+    }
+
+    #leftFooter {
+        /* width: 900px; */
+        /* height: 130px; */
+        /* background-color: cornflowerblue; */
+        /* margin-left: 50px; */
+        float: left;
+    }
+
+    #footerLogo {
+        /* width: 80px; */
+        /* height: 80px; */
+        /* background-color: orange; */
+        float: left;
+        /* margin-right: 20px; */
+        
+    }
+
+    #footerMenu {
+        /* width: 800px; */
+        /* height: 100px; */
+        /* background-color: lightgreen; */
+        float: left;
+    }
+
+    #footerMenu {
+        /* width: 800PX; */
+        /* height: 100px; */
+        /* background-color: lightgray; */
+        float: left;
+    }
+
+    #footerTopMenu {
+        /* width: 800px; */
+        /* height: 50px; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        /* background-color: aqua; */
+    }
+
+    .footerLi {
+        /* width: 160px; */
+        /* height: 50px; */
+        /* background-color: antiquewhite; */
+        float: left;
+        font-size: 12px;
+        /* line-height: 50px; */
+        text-align: center;
+        font-weight: 900;
+    }
+
+    #footerCopyright {
+        /* width: 800px; */
+        /* height: 50px; */
+        line-height: 50px;
+        font-size: 12px;
+    }
+
+    /* footer Left End */
+    /* footer Right */
+    #rightFooter {
+        /* width: 500px; */
+        /* height: 100px; */
+        /* background-color: lightpink; */
+        float: right;
+        margin-top : 10px;
+    }
+
+    #footerSNS {
+        /* width: 300px; */
+        /* height: 100px; */
+        float: left;
+    }
+
+    .sns {
+        /* width: 60px; */
+        /* height: 60px; */
+        float: left;
+        /* background-color: dodgerblue; */
+    }
+    
+    select{
+        /* width : 100px; */
+        /* height: 30px; */
+        float : right
+    }
+
+    /* media Query */
